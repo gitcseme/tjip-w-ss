@@ -1,5 +1,7 @@
-// TC: O(N * log K)
-// SC: O(K) auxiliary stack space
+// K is the number of linked list & N is total number of nodes in K linked lists.
+// TC: O(N logK)
+// MC: O(logK)
+
 
 class Solution {
 private:

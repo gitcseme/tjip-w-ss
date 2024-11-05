@@ -1,3 +1,6 @@
+// TC: O(1)
+// MC: O(1)
+
 class Solution {
 public:
     void deleteNode(ListNode* node) {
