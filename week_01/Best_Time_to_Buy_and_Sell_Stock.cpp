@@ -1,5 +1,9 @@
+// TC: O(N)
+// MC: O(1)
+
 class Solution {
 public:
+
     int maxProfit(vector<int>& prices) {
         int len = prices.size();
         int maxPriceAtRight = prices[len-1];

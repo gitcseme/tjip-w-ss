@@ -1,3 +1,6 @@
+// TC: O(N^2)
+// MC: O(1)
+
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {

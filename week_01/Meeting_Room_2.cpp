@@ -1,3 +1,6 @@
+// TC: O(NlogN)
+// MC: O(N)
+
 class Solution {
 public:
     int minMeetingRooms(vector<Interval>& intervals) {

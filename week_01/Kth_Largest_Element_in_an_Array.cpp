@@ -1,3 +1,6 @@
+// TC: O(N)
+// MC: O(1)
+
 mt19937 rng(0); // Seed
 
 class Solution {

@@ -1,3 +1,6 @@
+// TC: O(NlogN)
+// MC: O(N)
+
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {

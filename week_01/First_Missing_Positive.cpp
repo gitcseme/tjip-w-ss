@@ -1,3 +1,6 @@
+// TC: O(N)
+// MC: O(1)
+
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
