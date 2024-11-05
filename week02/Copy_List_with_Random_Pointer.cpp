@@ -1,3 +1,6 @@
+// TC: O(N)
+// MC: O(N)
+
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
