@@ -1,3 +1,11 @@
+// N is the total products 
+// L is the length of each product
+// W is the length of search word
+
+// TC: O(N * L) -> for building trie + O(W * L * 3) -> for dfs
+// MC: O(N * L) -> for trie nodes
+
+
 class Solution {
 private:
     class TrieNode {

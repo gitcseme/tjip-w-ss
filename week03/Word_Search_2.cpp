@@ -1,3 +1,9 @@
+// N is the total number words
+// L is the length of each word
+// B = 144, is the board size
+// TC: O(N * L) -> for building trie + O(B * L * 4) -> for dfs + O(log N) -> set insert
+// MC: O(N * L) -> for trie nodes + O(B * L * 4) -> for dfs recursive stack space + O(N) -> for set + O(N) -> for result
+
 class Solution {
 private:
     class TrieNode {
@@ -42,7 +48,7 @@ private:
     }
 
 
-    void searchBoard(TrieNode* node, string &curr_word, vector<vector<char>>& board, 
+    void dfs(TrieNode* node, string &curr_word, vector<vector<char>>& board, 
         set<string> &result, vector<vector<bool>> &visited, int r, int c) 
     {
         if (node -> wordEnd) {
@@ -55,7 +61,7 @@ private:
             int y = c + y_cord[i]; 
             if (isValid(x, y) && !visited[x][y] && node -> next.count(board[x][y])) {
                 curr_word.push_back(board[x][y]);
-                searchBoard(node -> next[board[x][y]], curr_word, board, result, visited, x, y);
+                dfs(node -> next[board[x][y]], curr_word, board, result, visited, x, y);
                 curr_word.pop_back();
             }
         }
@@ -77,7 +83,7 @@ public:
                 if (root -> next.count(ch)) {
                     string curr_word;
                     curr_word.push_back(ch);
-                    searchBoard(root -> next[ch], curr_word, board, result, visited, i, j);
+                    dfs(root -> next[ch], curr_word, board, result, visited, i, j);
                 }
             }
         }

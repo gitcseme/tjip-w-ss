@@ -1,4 +1,4 @@
-// TC: O(n) -> search, insert, starts-with
+// TC: O(n) -> search, insert, starts-with  [where n is length of words]
 // MC: O(n) -> for trie nodes
 class Trie {
 private:

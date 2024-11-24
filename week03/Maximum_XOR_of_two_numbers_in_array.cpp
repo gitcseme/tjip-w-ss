@@ -1,3 +1,6 @@
+// TC: O(N * B) where N is the length of the array nums and B = 31, the number of bits in an integer
+// MC: O(N * B) for building trie
+
 class Solution {
 private:
     class TrieNode {
