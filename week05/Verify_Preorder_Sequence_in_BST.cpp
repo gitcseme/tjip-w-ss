@@ -1,3 +1,6 @@
+// TC: O(n) where n is the length of preorder sequence
+// MC: O(n) recursive stack space
+
 class Solution {
 private:
     bool tryBuildBST(vector<int>& preorder, int& index, int low, int high) {
