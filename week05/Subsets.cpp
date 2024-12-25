@@ -1,3 +1,6 @@
+// TC: O(2^n) where n is the length of the input array
+// MC: O(2^n) recursive stack space + O(2^n) for subset collection
+
 class Solution {
 private:
     vector<vector<int>> results;
