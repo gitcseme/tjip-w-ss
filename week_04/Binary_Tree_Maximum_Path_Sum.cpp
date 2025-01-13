@@ -21,8 +21,12 @@ private:
     }
 
 public:
-    int maxPathSum(TreeNode* root) {
+    int maxPathSumHelper(TreeNode* root) {
+        mxSum = INT_MIN;
         findMaxPath(root);
         return mxSum;
+    }
+    int maxPathSum(TreeNode* root) {
+        return maxPathSumHelper(root);
     }
 };
