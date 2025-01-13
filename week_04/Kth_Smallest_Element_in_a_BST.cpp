@@ -1,5 +1,5 @@
 // TC: O(K) where K is the k-th element asked for in question
-// MC: O(1)
+// MC: O(K) recursion stack space
 
 class Solution {
 private:
