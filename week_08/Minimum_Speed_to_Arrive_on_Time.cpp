@@ -1,8 +1,10 @@
+// TC: log(N) * N where N is the size of dist array
+// MC: O(N)
+
 class Solution {
 private:
     bool isReachable(vector<int>& dist, double hour, int speed) {
         double elapsed_time = 0.00;
-
         for (int i = 0; i < dist.size(); ++i) {
             if (i == dist.size() - 1) {
                 elapsed_time += (1.00 * dist[i]) / speed;
